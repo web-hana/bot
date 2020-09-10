@@ -1,6 +1,7 @@
 const Discord = require('discord.js')
 const client = new Discord.Client()
 
+const { embed } = require('./utils')
 const { help, ping } = require('./commands')
 
 const commands = {
@@ -17,7 +18,7 @@ client.on('message', async msg => {
 
   for (const [regexp, command] of Object.entries(commands)) {
     if (msg.content.match(RegExp(regexp, 'i'))) {
-      await command(msg)
+      await command(msg, embed(msg), client)
       return
     }
   }
