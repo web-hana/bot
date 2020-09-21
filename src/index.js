@@ -2,11 +2,12 @@ const Discord = require('discord.js')
 const client = new Discord.Client()
 
 const { embed } = require('./utils')
-const { help, ping } = require('./commands')
+const { help, mark, ping } = require('./commands')
 
 const commands = {
   'help': help,
-  'ping': ping,
+  '\!\?': mark,
+  'ping': ping
 }
 
 client.on('ready', () => {
