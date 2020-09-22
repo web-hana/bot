@@ -12,7 +12,8 @@ const {
   fortune,
   meal,
   search,
-  set
+  set,
+  schedule
 } = require('./commands')
 
 const commands = {
@@ -22,7 +23,8 @@ const commands = {
   '운세': fortune,
   '급식|조식|중식|석식|아침|점심|저녁': meal,
   '검색': search,
-  '등록': set
+  '등록': set,
+  '일정': schedule
 }
 
 const searches = {}

@@ -5,6 +5,7 @@ const fortune = require('./fortune')
 const meal = require('./meal')
 const search = require('./search')
 const set = require('./set')
+const schedule = require('./schedule')
 
 module.exports = {
   help,
@@ -13,5 +14,6 @@ module.exports = {
   fortune,
   meal,
   search,
-  set
+  set,
+  schedule
 }
