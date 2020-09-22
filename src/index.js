@@ -21,7 +21,8 @@ const {
   calculator,
   choice,
   covid,
-  updown
+  updown,
+  baseball
 } = require('./commands')
 
 const commands = {
@@ -40,7 +41,8 @@ const commands = {
   '계산': calculator,
   '선택': choice,
   '코로나': covid,
-  '업다운': updown
+  '업다운': updown,
+  '야구': baseball
 }
 
 const searches = {}
