@@ -13,7 +13,7 @@ cookie = [
   "자주성을 잃은 삶은 필연적으로 불행해지게 됩니다.",
   "삶의 방향성을 잃어버리지 않았는지 되짚어보세요.",
   "실패가 겹쳐도 당신은 당신입니다.",
-  "매월 말 조금씩 저금을 해 보면, 연말에 가 얼마나 적은 금액이 모였는지 알고 놀라게 될 것입니다.",
+  "매월 말 조금씩 저금을 해 보면, 연말에 얼마나 많은 금액이 모였는지 알고 놀라게 될 것입니다.",
   "열망이 능력을 가져옵니다.",
   "세상은 고난으로 가득하지만, 고난의 극복으로도 가득합니다.",
 ]
@@ -21,30 +21,29 @@ cookie = [
 const fortune = (msg) => {
   const data = load('data/fortune.json')
   msg.channel.send('오늘의 운세는~~~~')
-  result = Math.floor(Math.random() * cookie.length + 1);
+  result = Math.floor(Math.random() * cookie.length + 1)
 
-  const authorData = data[msg.author.id] ? data[msg.author.id] : null
   const date = new Date()
   const today = date.getFullYear().toString() + (date.getMonth() + 1) + date.getDate()
 
-  if (authorData != null) {
-    if (authorData.date == today) {
-      msg.reply(authorData.cookie);
+  if (data[msg.author.id] != null) {
+    if (data[msg.author.id].date == today) {
+      msg.reply(data[msg.author.id].cookie)
     } else {
       data[msg.author.id] = {
         cookie: cookie[result],
         date: today,
       }
+      msg.reply(data[msg.author.id].cookie)
       save('data/fortune.json', data)
-      msg.reply(cookie[result]);
     }
   } else {
     data[msg.author.id] = {
       cookie: cookie[result],
       date: today,
     }
+    msg.reply(data[msg.author.id].cookie)
     save('data/fortune.json', data)
-    msg.reply(cookie[result]);
   }
 }
 

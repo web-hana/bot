@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node -r dotenv/config src/index",
-    "dev": "nodemon -r dotenv/config src/index dotenv_config_path=.env.dev"
+    "dev": "nodemon -r dotenv/config src/index dotenv_config_path=.env.dev -i data"
   },
   "repository": {
     "type": "git",
@@ -20,7 +20,8 @@
   "homepage": "https://github.com/web-hana/bot#readme",
   "dependencies": {
     "discord.js": "^12.3.1",
-    "dotenv": "^8.2.0"
+    "dotenv": "^8.2.0",
+    "school-kr": "^3.1.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"

@@ -1,20 +1,31 @@
 const Discord = require('discord.js')
 const client = new Discord.Client()
 
+const School = require('school-kr')
+const school = new School()
+
 const { embed } = require('./utils')
 const {
   help,
   mark,
   ping,
   fortune,
+  meal,
+  search,
+  set
 } = require('./commands')
 
 const commands = {
   'help': help,
-  '\!\?': mark,
+  '[\!\?]': mark,
   'ping': ping,
   '운세': fortune,
+  '급식|조식|중식|석식|아침|점심|저녁': meal,
+  '검색': search,
+  '등록': set
 }
+
+const searches = {}
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`)
@@ -25,7 +36,7 @@ client.on('message', async msg => {
 
   for (const [regexp, command] of Object.entries(commands)) {
     if (msg.content.match(RegExp(regexp, 'i'))) {
-      await command(msg, embed(msg), client)
+      await command(msg, embed(msg), client, school, searches)
       return
     }
   }
