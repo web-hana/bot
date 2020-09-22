@@ -17,7 +17,8 @@ const {
   play,
   stop,
   translate,
-  rsp
+  rsp,
+  calculator
 } = require('./commands')
 
 const commands = {
@@ -32,7 +33,9 @@ const commands = {
   'play': play,
   'stop': stop,
   '번역': translate,
-  'rsp': rsp
+  'rsp': rsp,
+  '계산': calculator,
+  '선택': choice
 }
 
 const searches = {}
@@ -53,3 +56,4 @@ client.on('message', async msg => {
 })
 
 client.login(process.env.token)
+

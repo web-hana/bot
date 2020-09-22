@@ -10,6 +10,8 @@ const play = require('./play')
 const stop = require('./stop')
 const translate = require('./translate')
 const rsp = require('./rsp')
+const calculator = require('./calculator')
+const choice = require('./choice')
 
 module.exports = {
   help,
@@ -23,5 +25,7 @@ module.exports = {
   play,
   stop,
   translate,
-  rsp
+  rsp,
+  choice,
+  calculator
 }
