@@ -3,9 +3,7 @@ count= 0
 
 const baseball = (msg, embed) =>{
 
-    start=msg.content.split(' ')
-
-    if(start[1]=='시작'){
+    if(msg.content.includes('시작')){
         answer=setNumber()
         console.log(answer)
         msg.channel.send('좋아 숫자를 생각해써 맞춰봐')
@@ -35,12 +33,12 @@ const baseball = (msg, embed) =>{
             msg.channel.send('스트라이크 '+result[0]+'개, 볼 '+result[1]+'개다. '+(10-count)+'번 남았어~!')
             console.log(count)
             }
-        }else if(start[1]=='포기'){
+        }else if(msg.content.includes('포기')){
             is_start=0
             msg.channel.send('자신 있을 때 또 와,,,')
         }
     }
-    else if(start[1]=='방법' || start[1]=='어떻게'){
+    else if(msg.content.includes('방법')|| msg.content.includes('어떻게')){
         embed.setTitle('방법!')
             .setDescription('내가 생각하는 숫자를 맞춰봐\n숫자는 맞지만 위치가 틀렸을 때는 볼\n숫자와 위치가 전부 맞으면 스트라이크.\n중복숫자는 없어용\n기회는 10번 알겠으면 시작해줘~')
         msg.channel.send(embed)
