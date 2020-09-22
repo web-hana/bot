@@ -22,7 +22,10 @@ const {
   choice,
   covid,
   updown,
-  baseball
+  baseball,
+  check,
+  dust,
+  emergency
 } = require('./commands')
 
 const commands = {
@@ -37,12 +40,15 @@ const commands = {
   'play': play,
   'stop': stop,
   '번역': translate,
-  'rsp': rsp,
+  '안녕|동전|주사위|dice|제비뽑기': rsp,
   '계산': calculator,
   '선택': choice,
   '코로나': covid,
   '업다운': updown,
-  '야구': baseball
+  '야구': baseball,
+  '출석': check,
+  '미세먼지': dust,
+  '재난문자': emergency
 }
 
 const searches = {}

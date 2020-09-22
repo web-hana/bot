@@ -15,6 +15,9 @@ const choice = require('./choice')
 const covid = require('./covid')
 const updown = require('./updown')
 const baseball = require('./baseball')
+const check = require('./check')
+const dust = require('./dust')
+const emergency = require('./emergency')
 
 module.exports = {
   help,
@@ -33,5 +36,8 @@ module.exports = {
   calculator,
   covid,
   updown,
-  baseball
+  baseball,
+  check,
+  dust,
+  emergency
 }
