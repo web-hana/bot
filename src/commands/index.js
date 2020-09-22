@@ -13,6 +13,7 @@ const rsp = require('./rsp')
 const calculator = require('./calculator')
 const choice = require('./choice')
 const covid = require('./covid')
+const updown = require('./updown')
 
 module.exports = {
   help,
@@ -29,5 +30,6 @@ module.exports = {
   rsp,
   choice,
   calculator,
-  covid
+  covid,
+  updown
 }

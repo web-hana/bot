@@ -20,7 +20,8 @@ const {
   rsp,
   calculator,
   choice,
-  covid
+  covid,
+  updown
 } = require('./commands')
 
 const commands = {
@@ -38,10 +39,13 @@ const commands = {
   'rsp': rsp,
   '계산': calculator,
   '선택': choice,
-  '코로나': covid
+  '코로나': covid,
+  '업다운': updown
 }
 
 const searches = {}
+const number = {}
+const cnt = {}
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`)
@@ -52,7 +56,7 @@ client.on('message', async msg => {
 
   for (const [regexp, command] of Object.entries(commands)) {
     if (msg.content.match(RegExp(regexp, 'i'))) {
-      await command(msg, embed(msg), client, school, searches)
+      await command(msg, embed(msg), client, school, searches, number, cnt)
       return
     }
   }
