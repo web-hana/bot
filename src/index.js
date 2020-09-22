@@ -20,6 +20,7 @@ const {
   rsp,
   calculator,
   choice,
+  covid
 } = require('./commands')
 
 const commands = {
@@ -36,7 +37,8 @@ const commands = {
   '번역': translate,
   'rsp': rsp,
   '계산': calculator,
-  '선택': choice
+  '선택': choice,
+  '코로나': covid
 }
 
 const searches = {}
