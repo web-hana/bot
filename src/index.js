@@ -18,7 +18,8 @@ const {
   stop,
   translate,
   rsp,
-  calculator
+  calculator,
+  choice,
 } = require('./commands')
 
 const commands = {
