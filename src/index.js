@@ -17,6 +17,7 @@ const {
   play,
   stop,
   translate,
+  rsp
 } = require('./commands')
 
 const commands = {
@@ -31,6 +32,7 @@ const commands = {
   'play': play,
   'stop': stop,
   '번역': translate,
+  'rsp': rsp
 }
 
 const searches = {}

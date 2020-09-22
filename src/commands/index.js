@@ -9,6 +9,7 @@ const schedule = require('./schedule')
 const play = require('./play')
 const stop = require('./stop')
 const translate = require('./translate')
+const rsp = require('./rsp')
 
 module.exports = {
   help,
@@ -22,4 +23,5 @@ module.exports = {
   play,
   stop,
   translate,
+  rsp
 }
