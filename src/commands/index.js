@@ -6,6 +6,9 @@ const meal = require('./meal')
 const search = require('./search')
 const set = require('./set')
 const schedule = require('./schedule')
+const play = require('./play')
+const stop = require('./stop')
+const translate = require('./translate')
 
 module.exports = {
   help,
@@ -15,5 +18,8 @@ module.exports = {
   meal,
   search,
   set,
-  schedule
+  schedule,
+  play,
+  stop,
+  translate,
 }

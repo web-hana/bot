@@ -1,0 +1,154 @@
+[
+    {
+        "source": "한국어(ko)",
+        "target": "영어(en)"
+    },
+    {
+        "source": "한국어(ko)",
+        "target": "일본어(ja)"
+    },
+    {
+        "source": "한국어(ko)",
+        "target": "중국어 간체(zh-CN)"
+    },
+    {
+        "source": "한국어(ko)",
+        "target": "중국어 번체(zh-TW)"
+    },
+    {
+        "source": "한국어(ko)",
+        "target": "베트남어(vi)"
+    },
+    {
+        "source": "한국어(ko)",
+        "target": "인도네시아어(id)"
+    },
+    {
+        "source": "한국어(ko)",
+        "target": "태국어(th)"
+    },
+    {
+        "source": "한국어(ko)",
+        "target": "독일어(de)"
+    },
+    {
+        "source": "한국어(ko)",
+        "target": "러시아어(ru)"
+    },
+    {
+        "source": "한국어(ko)",
+        "target": "스페인어(es)"
+    },
+    {
+        "source": "한국어(ko)",
+        "target": "이탈리아어(it)"
+    },
+    {
+        "source": "한국어(ko)",
+        "target": "프랑스어(fr)"
+    },
+    {
+        "source": "영어(en)",
+        "target": "한국어(ko)"
+    },
+    {
+        "source": "영어(en)",
+        "target": "일본어(ja)"
+    },
+    {
+        "source": "영어(en)",
+        "target": "스페인어(es)"
+    },
+    {
+        "source": "영어(en)",
+        "target": "중국어 간체(zh-CN)"
+    },
+    {
+        "source": "영어(en)",
+        "target": "중국어 번체(zh-TW)"
+    },
+    {
+        "source": "일본어(ja)",
+        "target": "한국어(ko)"
+    },
+    {
+        "source": "일본어(ja)",
+        "target": "영어(en)"
+    },
+    {
+        "source": "일본어(ja)",
+        "target": "중국어 간체(zh-CN)"
+    },
+    {
+        "source": "일본어(ja)",
+        "target": "중국어 번체(zh-TW)"
+    },
+    {
+        "source": "중국어 간체(zh-CN)",
+        "target": "한국어(ko)"
+    },
+    {
+        "source": "중국어 간체(zh-CN)",
+        "target": "영어(en)"
+    },
+    {
+        "source": "중국어 간체(zh-CN)",
+        "target": "중국어 번체(zh-TW)"
+    },
+    {
+        "source": "중국어 간체(zh-CN)",
+        "target": "일본어(ja)"
+    },
+    {
+        "source": "중국어 번체(zh-TW)",
+        "target": "한국어(ko)"
+    },
+    {
+        "source": "중국어 번체(zh-TW)",
+        "target": "영어(en)"
+    },
+    {
+        "source": "중국어 번체(zh-TW)",
+        "target": "중국어 간체(zh-CN)"
+    },
+    {
+        "source": "중국어 번체(zh-TW)",
+        "target": "일본어(ja)"
+    },
+    {
+        "source": "베트남어(vi)",
+        "target": "한국어(ko)"
+    },
+    {
+        "source": "인도네시아어(id)",
+        "target": "한국어(ko)"
+    },
+    {
+        "source": "태국어(th)",
+        "target": "한국어(ko)"
+    },
+    {
+        "source": "독일어(de)",
+        "target": "한국어(ko)"
+    },
+    {
+        "source": "러시아어(ru)",
+        "target": "한국어(ko)"
+    },
+    {
+        "source": "스페인어(es)",
+        "target": "한국어(ko)"
+    },
+    {
+        "source": "이탈리아어(it)",
+        "target": "한국어(ko)"
+    },
+    {
+        "source": "프랑스어(fr)",
+        "target": "한국어(ko)"
+    },
+    {
+        "source": "프랑스어(fr)",
+        "target": "영어(en)"
+    }
+]
