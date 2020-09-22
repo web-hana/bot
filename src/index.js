@@ -65,7 +65,6 @@ client.on('message', async msg => {
   for (const [regexp, command] of Object.entries(commands)) {
     if (msg.content.match(RegExp(regexp, 'i'))) {
       await command(msg, embed(msg), client, school, searches, number, cnt)
-      return
     }
   }
 })
